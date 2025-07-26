@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class EyeflowApplication
+class EyeFlowApplication
 
 fun main(args: Array<String>) {
-	runApplication<EyeflowApplication>(*args)
+	runApplication<EyeFlowApplication>(*args)
 }
