@@ -70,21 +70,27 @@ com.assignment.eyeflow/
 it needs to use separate packages for separation, namely domain, infrastructure, application, interfaces etc, follows 
 the contexts and aggregated identified in the event storming to create parts of the domain 
 
-The domain should have model, event, service, the model is for the domain models, event for the domain events and 
+- The domain should have model, event, service, the model is for the domain models, event for the domain events and 
 service for the domain services.
 
-When it  comes to infrastructure, I have two concerns to be fulfilled. I need to set up messaging between the different 
+- When it comes to infrastructure, I have two concerns to be fulfilled. I need to set up messaging between the different 
 contexts. I am thinking of using an in memory event bus for now and I need reactive persistence to be used for the 
 persistence layer to store the aggregates.
 
-When in comes to ports, REST API is the primary form of interfacing with the application, the REST API needs to be 
+- When in comes to ports, REST API is the primary form of interfacing with the application, the REST API needs to be 
 secured by an authentication scheme, I am thinking of using a Basic Auth for now
 
-- I dont see any part of the application subscribed to the events, so that means the application is not complete right, 
+- I don't see any part of the application subscribed to the events, so that means the application is not complete right, 
 only when other components subscribe to events the flow will work
 
 - Add some seed data to the application during first boot so whoever is testing has some sample data to work with 
 persisted in the database
+- it's time to add a README.md file, I would like to write how I approached this assignment, I started out with Event 
+storming process and then used agentic code assistance to create the skeleton project to have domain driven 
+separation all guided by the outcomes of the event storming process, the readme should link to the @EVENT_STORMING.md 
+so that the reader will know about the different identified contexts, commands, events and aggregates, leave some space 
+for prompts used for the project at the end for me to fill in, in the end add AI tooling used section and add 
+windsurf + claude 3.7 Sonnet.
 
 
 
